@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">2018 FIFA WORLD CUP RUSSIA™</string>
+    <string name="title_home">Home</string>
+    <string name="title_groups">Groups</string>
+    <string name="title_matches">Matches</string>
+    <string name="title_knockout">Knockout</string>
+    <string name="title_grade">Grade</string>
+</resources>

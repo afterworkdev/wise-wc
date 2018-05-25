@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">2018 FIFA WORLD CUP RUSSIA™</string>
+    <string name="title_home">Home</string>
+    <string name="title_groups">리그</string>
+    <string name="title_matches">일정</string>
+    <string name="title_knockout">토너먼트</string>
+    <string name="title_grade">순위</string>
+</resources>
