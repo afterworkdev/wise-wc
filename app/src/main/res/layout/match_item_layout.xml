@@ -11,11 +11,12 @@
 
     <ImageView
         android:id="@+id/bookmark"
-        android:layout_width="30dp"
+        android:layout_width="32dp"
         android:layout_height="30dp"
-        android:layout_marginRight="5dp"
-        android:visibility="gone"
-        />
+        android:layout_marginRight="3dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/star_click"
+        android:visibility="visible" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -69,6 +70,7 @@
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:textSize="7pt"
                     android:layout_toRightOf="@id/teamA-flag"
                     android:text="0"
                     />
@@ -78,6 +80,7 @@
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:textSize="7pt"
                     android:layout_toRightOf="@id/teamA-flag"
                     android:text=":"
                     />
@@ -87,6 +90,7 @@
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:textSize="7pt"
                     android:layout_toRightOf="@id/teamA-flag"
                     android:text="0"
                     />
@@ -104,7 +108,9 @@
                     android:id="@+id/schedule"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
+                    android:textSize="5pt"
                     android:gravity="center"
+
                     android:text="yyyy-mm-dd hh:MM:ss"
                     />
 
