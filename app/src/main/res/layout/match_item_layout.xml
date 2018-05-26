@@ -1,33 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
     android:gravity="center"
-    android:orientation="vertical"
-    android:layout_margin="2dp"
-    >
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/bookmark"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/teamA-flag"
-            android:layout_width="70dp"
-            android:layout_height="35dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/rus"
+        <LinearLayout
+            android:id="@+id/teamA"
             android:layout_alignParentLeft="true"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/teamB-flag"
-            android:layout_width="70dp"
-            android:layout_height="35dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ksa"
+            <ImageView
+                android:id="@+id/teamA-flag"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rus"
+                />
+
+            <TextView
+                android:id="@+id/teamA-title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toRightOf="@id/teamA-flag"
+                android:textSize="5pt"
+                android:text="RUSSIA" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/midArea"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/scoreArea"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/scoreA"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/teamA-flag"
+                    android:text="0"
+                    />
+
+                <TextView
+                    android:id="@+id/vs"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/teamA-flag"
+                    android:text=":"
+                    />
+
+                <TextView
+                    android:id="@+id/scoreB"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/teamA-flag"
+                    android:text="0"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/matchSchedule"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/schedule"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="yyyy-mm-dd hh:MM:ss"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/teamB"
             android:layout_alignParentRight="true"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/teamB-flag"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ksa"
+                />
+
+            <TextView
+                android:id="@+id/teamB-title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/teamB-flag"
+                android:gravity="center"
+                android:textSize="5pt"
+                android:text="Saudi Arabia"
+                />
+
+
+        </LinearLayout>
 
     </RelativeLayout>
 
