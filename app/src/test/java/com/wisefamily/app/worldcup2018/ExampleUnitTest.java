@@ -1,4 +1,4 @@
-package worldcup2018.app.wisefamily.com.worldcup2018;
+package com.wisefamily.app.worldcup2018;
 
 import org.junit.Test;
 

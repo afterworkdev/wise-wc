@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="worldcup2018.app.wisefamily.com.worldcup2018.MainActivity">
+    tools:context="com.wisefamily.app.worldcup2018.MainActivity">
 
     <TextView
         android:id="@+id/message"
