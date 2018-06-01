@@ -1,15 +1,20 @@
 package com.wisefamily.app.worldcup2018;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.google.gson.Gson;
+import com.wisefamily.app.worldcup2018.data.WCData;
 import com.wisefamily.app.worldcup2018.model.Groups;
 import com.wisefamily.app.worldcup2018.net.WCApi;
+
+import java.util.Locale;
 
 
 public class SplashActivity extends Activity {
@@ -23,6 +28,8 @@ public class SplashActivity extends Activity {
         setContentView(R.layout.activity_splash);
 
 //        MobileAds.initialize(this, getString(R.string.admob_id));
+        Locale locale = getCurrentLocale(this);
+        WCData.getInstance().setCurrentLocale(locale);
 
         new Handler().postDelayed(new Runnable(){
             @Override
@@ -60,6 +67,15 @@ public class SplashActivity extends Activity {
                 finish();
             }
         });
+    }
+
+    private Locale getCurrentLocale(Context context){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
+            return context.getResources().getConfiguration().getLocales().get(0);
+        } else{
+            //noinspection deprecation
+            return context.getResources().getConfiguration().locale;
+        }
     }
 
 }

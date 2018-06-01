@@ -28,6 +28,7 @@ public class ScheduleViewHolder extends RecyclerView.ViewHolder {
     @BindView(R.id.scoreA) TextView tvScoreA;
     @BindView(R.id.vs) TextView tvVs;
     @BindView(R.id.scoreB) TextView tvScoreB;
+    @BindView(R.id.schedule) TextView tvSchedule;
 
     @BindView(R.id.teamB) LinearLayout layoutTeamB;
     @BindView(R.id.teamB_flag) ImageView ivflagTeamB;
