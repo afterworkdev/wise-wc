@@ -5,4 +5,6 @@
     <string name="title_matches">일정</string>
     <string name="title_knockout">토너먼트</string>
     <string name="title_grade">순위</string>
+
+    <string name="subtitle_today">오늘의 경기</string>
 </resources>

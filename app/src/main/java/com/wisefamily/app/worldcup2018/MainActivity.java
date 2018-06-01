@@ -9,8 +9,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
-import android.widget.TextView;
-
 import com.wisefamily.app.worldcup2018.fragment.GroupFragment;
 import com.wisefamily.app.worldcup2018.fragment.ScheduleFragment;
 import com.wisefamily.app.worldcup2018.fragment.TodayFragment;

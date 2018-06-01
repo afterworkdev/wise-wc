@@ -49,6 +49,8 @@ public class SplashActivity extends Activity {
             @Override
             public void onResponse(String response) {
                 Groups groups = new Gson().fromJson(response, Groups.class);
+                WCData.getInstance().setGroups(groups);
+                WCData.getInstance().setRemoteGroups(groups);
 //                LottoInitData.getInstance().setRecentInfo(init, dbHelper);
 //                dbHelper.insertDataFromList(LottoInitData.getInstance().getLottoList());
 

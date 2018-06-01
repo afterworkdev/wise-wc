@@ -16,11 +16,10 @@ import com.wisefamily.app.worldcup2018.R;
 @EqualsAndHashCode(callSuper = false)
 public class ScheduleViewHolder extends RecyclerView.ViewHolder {
 
-    @BindView(R.id.bookmark)
-    ImageView ivbookmark;
+    @BindView(R.id.bookmark) ImageView ivBookmark;
 
     @BindView(R.id.teamA) LinearLayout layoutTeamA;
-    @BindView(R.id.teamA_flag) ImageView ivflagTeamA;
+    @BindView(R.id.teamA_flag) ImageView ivFlagTeamA;
     @BindView(R.id.teamA_title) TextView tvTitleTeamA;
 
     @BindView(R.id.midArea) LinearLayout middleArea;
@@ -31,7 +30,7 @@ public class ScheduleViewHolder extends RecyclerView.ViewHolder {
     @BindView(R.id.schedule) TextView tvSchedule;
 
     @BindView(R.id.teamB) LinearLayout layoutTeamB;
-    @BindView(R.id.teamB_flag) ImageView ivflagTeamB;
+    @BindView(R.id.teamB_flag) ImageView ivFlagTeamB;
     @BindView(R.id.teamB_title) TextView tvTitleTeamB;
 
     public ScheduleViewHolder(View itemView) {
