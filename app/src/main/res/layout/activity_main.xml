@@ -7,11 +7,11 @@
     android:layout_height="match_parent"
     tools:context="com.wisefamily.app.worldcup2018.MainActivity">
 
-    <FrameLayout
-        android:id="@+id/main_frame"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_margin="0dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="0dp"
         />
 
     <android.support.design.widget.BottomNavigationView

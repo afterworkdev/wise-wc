@@ -11,6 +11,8 @@
         android:layout_height="wrap_content"
         android:textSize="10pt"
         android:text="WorldCup 2018"
+        android:gravity="center"
+        android:layout_gravity="center"
         />
 </FrameLayout>
 
