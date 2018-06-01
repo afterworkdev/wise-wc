@@ -7,4 +7,5 @@
     <string name="title_grade">순위</string>
 
     <string name="subtitle_today">오늘의 경기</string>
+    <string name="subtitle_schedule">경기 일정</string>
 </resources>

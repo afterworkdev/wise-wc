@@ -20,14 +20,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link TodayFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link TodayFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class TodayFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
@@ -84,7 +76,6 @@ public class TodayFragment extends Fragment {
         List<MatchSchedule> schedules = WCData.getInstance().getMatchSchedulesAfterNow(4);
         ScheduleViewAdapter adapter = new ScheduleViewAdapter();
         adapter.setTodaysMatches(schedules);
-//        adapter.setSchedule(schedules);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 

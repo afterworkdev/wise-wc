@@ -8,4 +8,5 @@
     <string name="title_grade">Grade</string>
 
     <string name="subtitle_today">Matches of Today</string>
+    <string name="subtitle_schedule">Matches</string>
 </resources>

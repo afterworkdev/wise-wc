@@ -4,10 +4,30 @@
     android:layout_height="match_parent"
     tools:context="com.wisefamily.app.worldcup2018.fragment.ScheduleFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/scheduleTopArea"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Schedule Fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/subtitle_schedule" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMatchSchedules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
 
 </FrameLayout>
